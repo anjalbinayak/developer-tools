@@ -1,13 +1,8 @@
-import { slide as Menu } from "react-burger-menu";
-
+import { bubble as Menu } from "react-burger-menu";
 import React from "react";
 import Link from "next/link";
-
+import { FaFileImage, FaHome, FaTools } from "react-icons/fa";
 const SideBar = ({ pageWrapId }) => {
-  const showSettings = (e) => {
-    e.preventDefault();
-  };
-
   const styles = {
     bmBurgerButton: {
       position: "fixed",
@@ -56,24 +51,25 @@ const SideBar = ({ pageWrapId }) => {
   return (
     <Menu styles={styles} pageWrapId={`${pageWrapId}`}>
       <div className="flex flex-col">
-        <div>
+        <div className="p-1 menu-item-box">
           <Link href="/">
             <a id="home" className="menu-item">
-              Home
+              <FaHome className="inline mb-1" /> <span>Home</span>
             </a>
           </Link>
         </div>
-        <div>
+        <div className="p-1 menu-item-box">
           <Link href="/tools">
             <a id="tools" className="menu-item">
-              Tools
+              <FaTools className="inline mb-1" /> <span>Tools</span>
             </a>
           </Link>
         </div>
-        <div>
+        <div className="p-1 menu-item-box">
           <Link href="/tools/image">
             <a id="image" className="menu-item">
-              Image Converter
+              <FaFileImage className="inline mb-1" />{" "}
+              <span> Image Converter</span>
             </a>
           </Link>
         </div>

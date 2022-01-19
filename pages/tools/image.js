@@ -1,4 +1,11 @@
-import { Button, Input, Textarea, useClipboard } from "@chakra-ui/react";
+import {
+  Button,
+  Input,
+  Textarea,
+  useClipboard,
+  Flex,
+  Heading,
+} from "@chakra-ui/react";
 import { useState, useRef } from "react";
 import { toast } from "react-toastify";
 
@@ -18,7 +25,7 @@ export default function Image() {
   };
   return (
     <>
-      <div className="flex flex-col my-8">
+      <div className="flex flex-col">
         <Input
           className=""
           type="file"
