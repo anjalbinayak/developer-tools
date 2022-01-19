@@ -12,6 +12,9 @@ const Layout = ({ children }) => {
       <Container id="__main-container__">
         {children}
         <ToastContainer />
+        <footer className="fixed bottom-0 left-0 p-3 text-center w-full">
+          <p className="">Made by Anjal Binayak with ❤</p>
+        </footer>
       </Container>
     </>
   );
