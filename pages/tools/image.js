@@ -25,10 +25,14 @@ export default function Image() {
   };
   return (
     <>
-      <div className="flex flex-col">
+      <Heading as="h5" color="teal.600">
+        Image Base64 Converter
+      </Heading>
+      <div className="flex flex-row mt-2">
         <Input
-          className=""
+          width="20rem"
           type="file"
+          className="flex-none"
           onChange={(e) => {
             printFile(e.target.files[0]).then((data) => {
               setTextAreaValue(data);
@@ -40,19 +44,10 @@ export default function Image() {
             });
           }}
         />
-        <Textarea
-          className=""
-          variant="outline"
-          color="gray.400"
-          placeholder="Image encoded into base64 String"
-          value={textAreaValue}
-          size="lg"
-          borderColor="teal"
-          disabled={true}
-        ></Textarea>
+
         <Button
           disabled={textAreaValue.length === 0}
-          className=""
+          className=" flex-none"
           onClick={() => {
             toast.success("Copied to clipboard 📋");
             onCopy();
@@ -61,6 +56,16 @@ export default function Image() {
           {hasCopied ? "Copied ✔" : " 📋 Copy"}
         </Button>
       </div>
+      <Textarea
+        className="w-10"
+        variant="outline"
+        color="gray.400"
+        placeholder="Image encoded into base64 String"
+        value={textAreaValue}
+        size="lg"
+        borderColor="teal"
+        disabled={true}
+      ></Textarea>
     </>
   );
 }
