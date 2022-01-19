@@ -18,7 +18,7 @@ export default function Image() {
   };
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col my-8">
         <Input
           className=""
           type="file"
