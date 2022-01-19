@@ -55,21 +55,29 @@ const SideBar = ({ pageWrapId }) => {
 
   return (
     <Menu styles={styles} pageWrapId={`${pageWrapId}`}>
-      <Link href="/">
-        <a id="home" className="menu-item">
-          Home
-        </a>
-      </Link>
-      <Link href="/tools">
-        <a id="tools" className="menu-item">
-          Tools
-        </a>
-      </Link>
-      <Link href="/tools/image">
-        <a id="image" className="menu-item">
-          Image Converter
-        </a>
-      </Link>
+      <div className="flex flex-col">
+        <div>
+          <Link href="/">
+            <a id="home" className="menu-item">
+              Home
+            </a>
+          </Link>
+        </div>
+        <div>
+          <Link href="/tools">
+            <a id="tools" className="menu-item">
+              Tools
+            </a>
+          </Link>
+        </div>
+        <div>
+          <Link href="/tools/image">
+            <a id="image" className="menu-item">
+              Image Converter
+            </a>
+          </Link>
+        </div>
+      </div>
     </Menu>
   );
 };
