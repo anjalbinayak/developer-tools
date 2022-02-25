@@ -3,7 +3,6 @@ import {
   Input,
   Textarea,
   useClipboard,
-  Flex,
   Heading,
 } from "@chakra-ui/react";
 import { useState, useRef } from "react";
@@ -25,8 +24,8 @@ export default function Image() {
   };
   return (
     <>
-      <Heading as="h5" color="teal.600">
-        Image Base64 Converter
+      <Heading as="h6" color="teal.600">
+        Image to Base64 Converter
       </Heading>
       <div className="flex flex-row mt-2">
         <Input
@@ -58,6 +57,7 @@ export default function Image() {
       </div>
       <Textarea
         className="w-10"
+        height="200px"
         variant="outline"
         color="gray.400"
         placeholder="Image encoded into base64 String"
@@ -65,6 +65,7 @@ export default function Image() {
         size="lg"
         borderColor="teal"
         disabled={true}
+        resize={"none"}
       ></Textarea>
     </>
   );
