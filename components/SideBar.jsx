@@ -65,14 +65,6 @@ const SideBar = ({ pageWrapId }) => {
             </a>
           </Link>
         </div>
-        <div className="p-1 menu-item-box">
-          <Link href="/tools/image">
-            <a id="image" className="menu-item">
-              <FaFileImage className="inline mb-1" />{" "}
-              <span> Image Converter</span>
-            </a>
-          </Link>
-        </div>
       </div>
     </Menu>
   );
