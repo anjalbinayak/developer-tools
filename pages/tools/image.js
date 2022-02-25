@@ -5,6 +5,7 @@ import {
   useClipboard,
   Heading,
 } from "@chakra-ui/react";
+import Head from "next/head";
 import { useState, useRef } from "react";
 import { toast } from "react-toastify";
 
@@ -24,6 +25,9 @@ export default function Image() {
   };
   return (
     <>
+      <Head>
+        <title>Image To Text Converter - Dev Tools</title>
+      </Head>
       <Heading as="h6" color="teal.600">
         Image to Base64 Converter
       </Heading>
