@@ -4,6 +4,7 @@ import {
   Textarea,
   useClipboard,
   Heading,
+  Stack,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import { useState, useRef } from "react";
@@ -28,10 +29,8 @@ export default function Image() {
       <Head>
         <title>Image To Text Converter - Dev Tools</title>
       </Head>
-      <Heading as="h6" color="teal.600">
-        Image to Base64 Converter
-      </Heading>
-      <div className="flex flex-row mt-2">
+
+      <div className="flex flex-row mt-4">
         <Input
           width="20rem"
           type="file"
@@ -60,7 +59,7 @@ export default function Image() {
         </Button>
       </div>
       <Textarea
-        className="w-10"
+        className="w-10 mt-4"
         height="200px"
         variant="outline"
         color="gray.400"

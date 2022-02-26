@@ -2,7 +2,6 @@ import {
   Box,
   Flex,
   Avatar,
-  Link,
   Button,
   Menu,
   MenuButton,
@@ -15,6 +14,8 @@ import {
   useColorMode,
   Center,
 } from "@chakra-ui/react";
+
+import { Link } from "next/link";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 const NavLink = ({ children }) => (
@@ -77,10 +78,10 @@ export default function Nav() {
                     <p>@anjalbinayak</p>
                   </Center>
                   <br />
+
                   <MenuDivider />
-                  <MenuItem>Your Servers</MenuItem>
-                  <MenuItem>Account Settings</MenuItem>
-                  <MenuItem>Logout</MenuItem>
+                  <MenuItem>You are</MenuItem>
+                  <MenuItem>Awesome</MenuItem>
                 </MenuList>
               </Menu>
             </Stack>
