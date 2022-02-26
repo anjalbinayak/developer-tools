@@ -28,6 +28,12 @@ export default function Index() {
               <span className="mr-2">URL Decoder</span>
             </button>
           </Link>
+
+          <Link href="/tools/query-string-into-json" passHref>
+            <button className="h-10 px-5 text-indigo-100 transition-colors duration-150 bg-gray-500 rounded-lg focus:shadow-outline hover:bg-gray-700">
+              <span className="mr-2">Query String Into Json</span>
+            </button>
+          </Link>
         </Stack>
       </Box>
     </>
