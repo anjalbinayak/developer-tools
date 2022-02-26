@@ -16,7 +16,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import pp from "./anjalbinayak.png";
+
 const NavLink = ({ children }) => (
   <Link
     px={2}
@@ -55,12 +55,22 @@ export default function Nav() {
                   cursor={"pointer"}
                   minW={0}
                 >
-                  <Avatar size={"sm"} src={pp} />
+                  <Avatar
+                    size={"sm"}
+                    src={
+                      "https://raw.githubusercontent.com/anjalbinayak/developer-tools/main/readme/anjalbinayak.png"
+                    }
+                  />
                 </MenuButton>
                 <MenuList alignItems={"center"}>
                   <br />
                   <Center>
-                    <Avatar size={"2xl"} src={pp} />
+                    <Avatar
+                      size={"2xl"}
+                      src={
+                        "https://raw.githubusercontent.com/anjalbinayak/developer-tools/main/readme/anjalbinayak.png"
+                      }
+                    />
                   </Center>
                   <br />
                   <Center>
