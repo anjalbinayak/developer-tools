@@ -1,12 +1,6 @@
-import {
-  Button,
-  Input,
-  Textarea,
-  useClipboard,
-  Heading,
-  Stack,
-} from "@chakra-ui/react";
+import { Button, Input, Textarea, useClipboard } from "@chakra-ui/react";
 import Head from "next/head";
+import Link from "next/link";
 import { useState, useRef } from "react";
 import { toast } from "react-toastify";
 
@@ -70,6 +64,13 @@ export default function Image() {
         disabled={true}
         resize={"none"}
       ></Textarea>
+
+      <small className="text-gray-400">
+        Goto{" "}
+        <Link href="/tools/">
+          <a className="text-blue-500">Tools Page </a>
+        </Link>
+      </small>
     </>
   );
 }
