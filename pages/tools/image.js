@@ -56,7 +56,7 @@ export default function Image() {
         className="w-10 mt-4"
         height="200px"
         variant="outline"
-        color="gray.400"
+        
         placeholder="Image encoded into base64 String"
         value={textAreaValue}
         size="lg"
