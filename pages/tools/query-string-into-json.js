@@ -37,7 +37,7 @@ export default function QueryStringIntoJson() {
           size="lg"
           borderColor="teal"
           resize={"none"}
-          color="gray.800"
+          
         ></Textarea>
 
         <Button
